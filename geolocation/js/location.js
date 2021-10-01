@@ -6,10 +6,10 @@ elLocate.addEventListener("click",function(){
             let elLat = document.getElementById("lat")
             let elLong = document.getElementById("long")
             elLat.innerHTML = "Latitude: " + position.coords.latitude
-            elLong.innerHTML = "Longitude: " + position.coords.longtude
+            elLong.innerHTML = "Longitude: " + position.coords.longitude
         })
     } else {
         alert("Geolocation is not supported!")
     }
     
-   })
+})
