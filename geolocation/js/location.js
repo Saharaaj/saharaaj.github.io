@@ -1,6 +1,7 @@
 let elLocate = document.getElementById("btnLocate")
 elLocate.addEventListener("click",function(){
 
+
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("lat")
