@@ -12,7 +12,7 @@ function LoadUser(){
         fn.innerHTML = data.results[0].name.first
         ln.innerHTML = data.results[0].name.last
         phone.innerHTML = data.results[0].phone
-        img.src = data.result[0].picture.large
+        img.src = data.results[0].picture.large
     }) 
 }
 
