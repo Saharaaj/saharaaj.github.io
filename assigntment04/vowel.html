@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel</title>
+  </head>
+  <body>
+    <h1>Count Vowel in this letter</h1>
+    <input type="text" id="word" placeholder="Enter the word" />
+    <button onclick="myVowel()">COUNT</button>
+    <script>
+      function myVowel() {
+        let word = document.getElementById("word");
+        let word_split = word.value.split("");
+        let vowel = ["a", "e", "i", "o", "u"];
+        let count = 0;
+
+        for (i = 0; i < word_split.length; i++) {
+          if (vowel.includes(word_split[i])) {
+            count++;
+          }
+        }
+        alert("Number of vowels in '" + word.value + "' is " + count);
+      }
+    </script>
+  </body>
+</html>
